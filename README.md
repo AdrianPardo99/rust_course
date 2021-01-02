@@ -9,6 +9,7 @@ Al ser multiparadigma el lenguaje soporta:
 * Programación Imperativa
 
 <img src="https://github.com/AdrianPardo99/rust_course/blob/master/imgs/dancing-ferris.gif" width=100>
+
 ## Instalación de Rust
 Para segun la [página](https://www.rust-lang.org/tools/install) es solo necesario el uso de cURL para descargar e instalar solamente escribiendo en nuestra terminal:
 ```bash
