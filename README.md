@@ -8,10 +8,14 @@ Al ser multiparadigma el lenguaje soporta:
 * Programación por Procedimientos
 * Programación Imperativa
 
-![rust1](imgs/dancing-ferris.gif)
+![rust1](imgs/dancing-ferris.gif | width=40)
 ## Instalación de Rust
-
-![rust2](imgs/rustacean-flat-gesture.png)
+Para segun la [página](https://www.rust-lang.org/tools/install) es solo necesario el uso de cURL para descargar e instalar solamente escribiendo en nuestra terminal:
+```bash
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+Finalmente para el caso particular de Windows solo hay que [descargar el binario](https://static.rust-lang.org/rustup/dist/i686-pc-windows-gnu/rustup-init.exe) e instalar, posiblemente sea necesario crear las _env variables_.
+![rust2](imgs/rustacean-flat-gesture.png | width=40)
 ## Hola mundo
 Para el clásico Hola Mundo es necesario saber que las funciones en el lenguaje son llamadas o nombradas como macros para la ejecución de código en particular.
 
