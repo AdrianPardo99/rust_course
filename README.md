@@ -26,3 +26,30 @@ Por ello la llamada _println!()_ es una macro que ejecuta nuestro lenguaje para 
     println!("Hola mundo desde Rust");
   }
 ```
+Finalmente para compilarlo con el compilador de Rust solo es necesario realizar lo siguiente:
+```bash
+  rustc <archivo>
+```
+## Empaquetamiento y compilado con Cargo
+Cargo es un Administrador de paquetes que te ayuda a compilar y crear los archivos binarios a partir de una archivo de descripción, por ello la organización de como se realiza esto es:
+* Archivo Cargo.toml
+* Organizar todos los archivos fuente en un directorio _src/_ y que el archivo principal se llame _main.rs_
+
+La estructura del archivo es la siguiente:
+```toml
+  [package]
+  name="nombre del binario"
+  version="Version de la aplicación con tres numeros 0.0.0"
+  author=["Información del desarrollador"]
+```
+
+Finalmente para la compilación de todos nuestros archivos solo pondremos:
+```bash
+  cargo build
+```
+
+Y finalmente para ejecutar
+```bash
+  cargo run
+```
+Estos comandos generaran un archivo _.lock_ y una carpeta la cual contendrá todo el compilado de nuestros archivos que se alojaran en _target/_
