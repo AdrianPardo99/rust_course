@@ -62,6 +62,7 @@ La representación de que valores cubre __x__ va bajo el siguiente intervalo <im
 
 De tal forma que la tabla de los valores que cubre __x__ es:
 | Bits | Intervalo |
+| ---- | --------- |
 |   8     | -128 hasta 127 |
 |   16    | -32768 hasta 32767 |
 |   32    | -2147483648 hasta 2147483647 |
@@ -73,6 +74,7 @@ __Valores sin signo:__ Si bien el uso de signo nos permite separar un lado posit
 
 De tal forma que la tabla y los intervalos que cubre es la siguiente:
 | Bits | Intervalo |
+| ---- | --------- |
 | 8    | 0 hasta 255 |
 | 16   | 0 hasta 65536 |
 | 32   | 0 hasta 4294967296 |
@@ -102,6 +104,7 @@ También en Rust existen otro tipo de datos los cuales nos ayuda demasiado para 
 
 Por ello para declarar distintos tipos de datos tenemos lo siguiente:
 | Prefijo | Tipo de dato |
+| ---- | --------- |
 | char    | Carácter     |
 | f32     | Número de punto flotante de 32 bits |
 | f64     | Número de punto flotante de 64 bits |
