@@ -1,5 +1,5 @@
-#[allow(dead_code)]
-#[allow(unused_variables)]
+#![allow(dead_code)]
+#![allow(unused_variables)]
 use std::mem;
 fn main(){
     let a:u8=123; /* Valor inmutable de sin signo de 8 bits */

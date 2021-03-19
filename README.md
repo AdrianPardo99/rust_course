@@ -53,6 +53,11 @@ Y finalmente para ejecutar
   cargo run
 ```
 Estos comandos generaran un archivo _.lock_ y una carpeta la cual contendrá todo el compilado de nuestros archivos que se alojaran en _target/_
+
+De igual forma parecido a los archivos Makefile podemos hacer lo siguiente para eliminar al menos la carpeta _target/_ de modo en que usemos poco espacio en nuestro disco duro
+```bash
+  cargo clear
+```
 ## Variables
 Si bien en muchos lenguajes hay varios tipos de datos con los cuales podemos trabajar, en Rust se pueden crear variables desde la forma más sencilla, hasta la forma donde se específica totalmente el tipo de dato y cuantos bits utiliza en el programa.
 ### Tabla de valores predeterminados
@@ -84,8 +89,8 @@ De tal forma que la tabla y los intervalos que cubre es la siguiente:
 
 Para utilizarlo en algún programa de Rust solo es necesario realizar lo siguiente:
 ```rust
-  #[allow(dead_code)]
-  #[allow(unused_variables)]
+  #![allow(dead_code)]
+  #![allow(unused_variables)]
   use std::mem; /* Llamada a funciones en std */
   fn main(){
     let a:u8=123; /* Valor inmutable de sin signo de 8 bits */
@@ -112,8 +117,8 @@ Por ello para declarar distintos tipos de datos tenemos lo siguiente:
 
 Implementando en código:
 ```rust
-  #[allow(dead_code)]
-  #[allow(unused_variables)]
+  #![allow(dead_code)]
+  #![allow(unused_variables)]
   use std::mem; /* Llamada a funciones en std */
   fn main(){
     let a:char='a';
@@ -127,3 +132,5 @@ Implementando en código:
     println!("Booleano {} con {} bytes de uso en programa",d,mem::size_of_val(&d));
   }
 ```
+
+Destacando que si solo dejamos el uso de la palabra reservada _let_ en rust este sera considerado como una constante y por tanto es un valor inmutable, por ello para crear valores mutables tendremos que escribir _let mut_ para poder trabajar más adelante con nuestros datos

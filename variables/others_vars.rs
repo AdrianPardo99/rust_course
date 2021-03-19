@@ -1,5 +1,5 @@
-#[allow(dead_code)]
-#[allow(unused_variables)]
+#![allow(dead_code)]
+#![allow(unused_variables)]
 use std::mem; /* Llamada a funciones en std */
 fn main(){
     let a:char='a';
